@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Stockpoint.Models
 {
-    public class Product
+    public class Inventory
         {
             [Key]
             [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -34,7 +34,7 @@ namespace Stockpoint.Models
             public string date_of_purchase { get; set; }
 
 
-            public virtual category Category {get;set;}
+            public virtual Category Category {get;set;}
 
 
 

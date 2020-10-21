@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Stockpoint.Models
 {
-    public class Product
+    public class Category
         {
             [Key]
             public int id { get; set; }
