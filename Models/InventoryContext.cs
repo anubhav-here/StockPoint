@@ -12,7 +12,7 @@ namespace Stockpoint.Models
                 public InventoryContext(DbContextOptions<InventoryContext> options) : base(options)
                 {
                 }
-                public DbSet<Inventory> inventory { get; set; }
+                public DbSet<Inventory> inventories { get; set; }
             
         }
 }
