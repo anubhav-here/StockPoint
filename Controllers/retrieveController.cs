@@ -11,25 +11,32 @@ namespace Stockpoint.Controllers
     public class retrieveController : ControllerBase
     {
         private InventoryContext Context;
-        public retrieveController(InventoryContext context)
+        private CategoryContext categoryContext;
+        public retrieveController(InventoryContext context,CategoryContext categoryContext)
         {
             this.Context = context;
+            this.categoryContext=categoryContext;
         }
 
         [HttpGet("all")]
         public ActionResult<IEnumerable<Inventory>> all()
         {
-            return this.Context.inventories.ToList();
+            return this.Context.inventory.ToList();
  
         }
         [HttpGet("search")]
         public ActionResult<IEnumerable<Inventory>> search(string key){
             List<Inventory> myList=new List<Inventory>();
-            foreach(Inventory obj in this.Context.inventories){
-                string[] str=new string[8];
+            Dictionary<int,string> mydict=new Dictionary<int, string>();
+            foreach(Category obj in this.categoryContext.category){
+                mydict[obj.id]=obj.category_name;
+            }
+            foreach(Inventory obj in this.Context.inventory){
+                string[] str=new string[9];
                 str[0]=(obj.id).ToString();
                 str[1]=obj.invoice_id.ToString();
-                str[2]=obj.category_id.ToString();
+                int cat_id=obj.category_id;
+                str[2]=mydict[cat_id]; 
                 str[3]=(string)obj.item_name;
                 str[4]=(string)obj.item_model;
                 str[5]=obj.quantity.ToString();

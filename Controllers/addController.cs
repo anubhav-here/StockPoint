@@ -20,7 +20,8 @@ namespace Stockpoint.Controllers
         [HttpPost("add")]
         public ActionResult<Inventory> add([FromBody]Inventory p)
         {
-            this.Context.inventories.Add(p);
+            this.Context.inventory.Add(p);
+            this.Context.SaveChanges();
             return p;
         }
     }
