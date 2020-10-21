@@ -1,0 +1,5 @@
+D:\Productivity\Projects\Shell\Final Project\StockPoint\obj\Debug\netcoreapp3.1\Stockpoint.csprojAssemblyReference.cache
+D:\Productivity\Projects\Shell\Final Project\StockPoint\obj\Debug\netcoreapp3.1\Stockpoint.AssemblyInfoInputs.cache
+D:\Productivity\Projects\Shell\Final Project\StockPoint\obj\Debug\netcoreapp3.1\Stockpoint.AssemblyInfo.cs
+D:\Productivity\Projects\Shell\Final Project\StockPoint\obj\Debug\netcoreapp3.1\Stockpoint.csproj.CoreCompileInputs.cache
+D:\Productivity\Projects\Shell\Final Project\StockPoint\obj\Debug\netcoreapp3.1\Stockpoint.MvcApplicationPartsAssemblyInfo.cache
