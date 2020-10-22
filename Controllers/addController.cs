@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Stockpoint.Controllers
 
 {
-[Route("api/[controller]")]
+[Route("[controller]")]
     [ApiController]
     public class addController : ControllerBase
     {
@@ -17,8 +17,8 @@ namespace Stockpoint.Controllers
             this.Context = context;
         }
 
-        [HttpPost("add")]
-        public ActionResult<Inventory> add([FromBody]Inventory p)
+        [HttpPost]
+        public ActionResult<Inventory> Post([FromBody]Inventory p)
         {
             this.Context.inventory.Add(p);
             this.Context.SaveChanges();
