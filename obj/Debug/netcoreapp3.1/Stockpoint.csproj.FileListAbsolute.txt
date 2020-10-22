@@ -165,3 +165,11 @@ D:\Productivity\Projects\Shell\Final Project\StockPoint\bin\Debug\netcoreapp3.1\
 D:\Productivity\Projects\Shell\Final Project\StockPoint\bin\Debug\netcoreapp3.1\publish\appsettings.json
 D:\Productivity\Projects\Shell\Final Project\StockPoint\bin\Debug\netcoreapp3.1\publish\Stockpoint.deps.json
 D:\Productivity\Projects\Shell\Final Project\StockPoint\bin\Debug\netcoreapp3.1\publish\Stockpoint.runtimeconfig.json
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\publish\web.config
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\publish\appsettings.json
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\publish\Stockpoint.deps.json
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\publish\Stockpoint.runtimeconfig.json
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\Web\package-lock.json
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\Web\package.json
+C:\Users\anubhav.deep\Desktop\Stockpoint\StockPoint\bin\Debug\netcoreapp3.1\Web\public\manifest.json
