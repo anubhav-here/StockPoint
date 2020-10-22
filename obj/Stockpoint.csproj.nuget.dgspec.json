@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Prashant.Sengar\\Documents\\GitHub\\StockPoint\\Stockpoint.csproj": {}
+    "D:\\Productivity\\Projects\\Shell\\Final Project\\StockPoint\\Stockpoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Prashant.Sengar\\Documents\\GitHub\\StockPoint\\Stockpoint.csproj": {
+    "D:\\Productivity\\Projects\\Shell\\Final Project\\StockPoint\\Stockpoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Prashant.Sengar\\Documents\\GitHub\\StockPoint\\Stockpoint.csproj",
+        "projectUniqueName": "D:\\Productivity\\Projects\\Shell\\Final Project\\StockPoint\\Stockpoint.csproj",
         "projectName": "Stockpoint",
-        "projectPath": "C:\\Users\\Prashant.Sengar\\Documents\\GitHub\\StockPoint\\Stockpoint.csproj",
-        "packagesPath": "C:\\Users\\Prashant.Sengar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Prashant.Sengar\\Documents\\GitHub\\StockPoint\\obj\\",
+        "projectPath": "D:\\Productivity\\Projects\\Shell\\Final Project\\StockPoint\\Stockpoint.csproj",
+        "packagesPath": "C:\\Users\\sudar\\.nuget\\packages\\",
+        "outputPath": "D:\\Productivity\\Projects\\Shell\\Final Project\\StockPoint\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Prashant.Sengar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sudar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
