@@ -62,7 +62,7 @@ export default class AddInventory extends Component {
             alert('Price per unit must be an integer!')
             return;
         }
-        axios.post('https://stockpointtest.azurewebsites.net.com/add', {
+        axios.post('https://stockpointprod.azurewebsites.net/add', {
             "invoice_id": Number(this.state.invoice_id),
             "category_id": Number(this.state.category),
             "item_name": this.state.item_name,
@@ -100,9 +100,9 @@ export default class AddInventory extends Component {
         <TextField id="price_per_unit" label="Per Price Unit" onChange={(e)=>{this.setState({price_per_unit:e.target.value})} } value={this.state.price_per_unit} variant="outlined" />
         <TextField id="date_of_purchase" label="Date of Purchase" onChange={(e)=>{this.setState({date_of_purchase:e.target.value})} } value={this.state.date_of_purchase} variant="outlined" />
 
-            
+        <br/>
         <Button variant="contained" onClick={this.handleSubmit.bind(this)} color="secondary">
-                    Add
+                    Submit
         </Button>
         </form>
       </div>
