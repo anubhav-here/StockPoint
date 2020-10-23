@@ -6,6 +6,30 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 namespace Stockpoint.Controllers
 {
+public class result{
+            public int id { get; set; }
+            public int invoice_id {get;set;}
+            public string category_name { get; set; }
+            public string item_name { get; set; }
+            public string item_model { get; set; }
+            public int quantity { get; set; }
+            public int price_per_unit { get; set; }
+            public string date_of_purchase { get; set; }
+
+
+            public result(Inventory ob,string cat){
+                this.id=ob.id;
+                this.invoice_id = ob.invoice_id;
+                //this.category_id = category_id;
+                this.category_name=cat;
+                this.item_name = ob.item_name;
+                this.item_model = ob.item_model;
+                this.quantity = ob.quantity;
+                this.price_per_unit = ob.price_per_unit;
+                this.date_of_purchase = ob.date_of_purchase;   
+            }
+
+}
 [Route("[controller]")]
     [ApiController]
     public class retrieveController : ControllerBase
@@ -40,9 +64,10 @@ namespace Stockpoint.Controllers
         //     return this.Context.inventory.ToList();
  
         // }
+      //  [EnableCors("AnotherPolicy")]
         [HttpGet]
-        public ActionResult<IEnumerable<Inventory>> search(string inv_id,string category,string startDate,string endDate){
-            List<Inventory> myList=new List<Inventory>();
+        public ActionResult<IEnumerable<result>> search(string inv_id,string category,string startDate,string endDate){
+            List<result> myList=new List<result>();
             Dictionary<int,string> myDict=new Dictionary<int,string>();
             foreach(Category cat in this.categoryContext.category){
                 myDict[cat.id]=cat.category_name;
@@ -58,24 +83,23 @@ namespace Stockpoint.Controllers
             }
             foreach(Inventory ob in this.Context.inventory){
                 string cat_name=myDict[ob.category_id];
-                
+
                 if(flag[0]==true && ob.invoice_id.ToString()!=inv_id){
                     continue;
                 }
                 else if(flag[1]==true && cat_name!=category){
                     continue;
                 }
-                // else if(flag[2]==true && !(startDate.CompareTo(ob.date_of_purchase)<=0) && endDate.CompareTo(ob.date_of_purchase)>=0){
-                //     continue;
-                // }
                 else{
                     if(flag[2]!=false){
                     if(compareDates(startDate,endDate,ob.date_of_purchase)==true){
-                    myList.Add(ob);
+                        result ob2=new result(ob,cat_name);
+                        myList.Add(ob2);
                     }
                     }
                     else{
-                        myList.Add(ob);
+                        result ob2=new result(ob,cat_name);
+                        myList.Add(ob2);
                     }
                 }
             }
