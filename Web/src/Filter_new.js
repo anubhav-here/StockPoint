@@ -134,8 +134,8 @@ import axios from 'axios';
                          <FormControlLabel
                              control={
                                <Checkbox
-                                 checked={this.state.ageFilterChecked}
-                                 onChange={event => this.setState({ ageFilterChecked: event.target.checked })}
+                                 checked={this.state.DateFilterChecked}
+                                 onChange={event => this.setState({ DateFilterChecked: event.target.checked })}
                                />
                              }
                              label='Separate Values'
