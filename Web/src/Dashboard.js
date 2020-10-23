@@ -1,5 +1,6 @@
 import React from 'react';
 import MUIDataTable from 'mui-datatables';
+import AddInventory from './AddInventory';
 /*
   It uses npm mui-datatables. It's easy to use, you just describe columns and data collection.
   Checkout full documentation here :
@@ -51,12 +52,15 @@ class Dashboard extends React.Component {
       page: 1
     };
     return (
-      <MUIDataTable
-        title="Employee list"
-        data={data}
-        columns={columns}
-        options={options}
-      />
+      <div>
+        <AddInventory/>
+        <MUIDataTable
+          title="Employee list"
+          data={data}
+          columns={columns}
+          options={options}
+        />
+      </div>
     );
   }
 }
